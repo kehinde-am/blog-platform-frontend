@@ -3,7 +3,7 @@
 import axios from 'axios';
 axios.defaults.withCredentials = true;
 
-const API_URL = 'http://localhost:8080/api'; 
+const API_URL = 'https://mi-linux.wlv.ac.uk/~2315822/blog-platform-backend/public/api'; 
 
 // Fetch all posts
 export const fetchAllPosts = async () => {

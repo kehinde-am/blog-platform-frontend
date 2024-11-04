@@ -16,7 +16,7 @@ const AdminDashboard = () => {
 
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/api/users');
+                const response = await axios.get('https://mi-linux.wlv.ac.uk/~2315822/blog-platform-backend/public/api/users');
                 setUsers(response.data);
             } catch (error) {
                 console.error("Error fetching users:", error);
@@ -25,7 +25,7 @@ const AdminDashboard = () => {
 
         const fetchPosts = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/api/posts');
+                const response = await axios.get('https://mi-linux.wlv.ac.uk/~2315822/blog-platform-backend/public/api/posts');
                 setPosts(response.data);
             } catch (error) {
                 console.error("Error fetching posts:", error);
@@ -46,7 +46,7 @@ const AdminDashboard = () => {
     };
 
     const handleDelete = async () => {
-        const url = `http://localhost:8080/api/${currentItem.type}s/${currentItem.id}`;
+        const url = `https://mi-linux.wlv.ac.uk/~2315822/blog-platform-backend/public/api/${currentItem.type}s/${currentItem.id}`;
         try {
             await axios.delete(url);
             if (currentItem.type === 'user') {
