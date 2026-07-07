@@ -2,79 +2,225 @@
 
 exports[`PostList Component matches the snapshot 1`] = `
 <div
-  className="space-y-8"
+  className="grid gap-6 md:grid-cols-2"
+  style={
+    Object {
+      "opacity": 0,
+    }
+  }
 >
-  <div
-    className="bg-white rounded-lg shadow-lg p-5 hover:shadow-2xl transition duration-300 ease-in-out"
+  <article
+    className="card-hover group overflow-hidden"
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateY(24px)",
+      }
+    }
   >
-    <h2
-      className="text-2xl font-semibold"
-    >
-      <a
-        href="/posts/1"
-        onClick={[Function]}
-      >
-        First Post
-      </a>
-       
-    </h2>
-    <p
-      className="text-gray-700"
-    >
-      This is the first post content
-    </p>
     <div
-      className="flex justify-between items-center"
+      className="p-6 md:p-7"
     >
+      <div
+        className="flex items-center gap-2 mb-3"
+      >
+        <span
+          className="inline-flex items-center gap-1 text-xs font-medium text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full"
+        >
+          <svg
+            aria-hidden="true"
+            className="w-3.5 h-3.5"
+            data-slot="icon"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          1 January 2021
+        </span>
+        <span
+          className="text-xs font-medium text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full"
+        >
+          Latest
+        </span>
+      </div>
+      <h2
+        className="font-display text-xl md:text-2xl font-bold text-stone-900 mb-3 group-hover:text-brand-700 transition-colors"
+      >
+        <a
+          href="/posts/1"
+          onClick={[Function]}
+        >
+          First Post
+        </a>
+      </h2>
       <p
-        className="text-gray-500 text-sm"
+        className="text-stone-500 leading-relaxed mb-5"
       >
-        1 January 2021 at 12:00
+        This is the first post content
       </p>
-      <a
-        className="text-gray-600 hover:underline"
-        href="/posts/1"
-        onClick={[Function]}
+      <div
+        className="flex items-center justify-between pt-4 border-t border-stone-100"
       >
-        2 Comments
-      </a>
+        <a
+          className="inline-flex items-center gap-1.5 text-sm text-stone-500 hover:text-brand-600 transition-colors"
+          href="/posts/1"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="w-4 h-4"
+            data-slot="icon"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          2 Comments
+        </a>
+        <a
+          className="inline-flex items-center gap-1 text-sm font-semibold text-brand-600 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-2 group-hover:translate-x-0"
+          href="/posts/1"
+          onClick={[Function]}
+        >
+          Read more
+          <svg
+            aria-hidden="true"
+            className="w-4 h-4"
+            data-slot="icon"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
-  <div
-    className="bg-white rounded-lg shadow-lg p-5 hover:shadow-2xl transition duration-300 ease-in-out"
+  </article>
+  <article
+    className="card-hover group overflow-hidden"
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateY(24px)",
+      }
+    }
   >
-    <h2
-      className="text-2xl font-semibold"
-    >
-      <a
-        href="/posts/2"
-        onClick={[Function]}
-      >
-        Second Post
-      </a>
-       
-    </h2>
-    <p
-      className="text-gray-700"
-    >
-      This is the second post content
-    </p>
     <div
-      className="flex justify-between items-center"
+      className="p-6 md:p-7"
     >
+      <div
+        className="flex items-center gap-2 mb-3"
+      >
+        <span
+          className="inline-flex items-center gap-1 text-xs font-medium text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full"
+        >
+          <svg
+            aria-hidden="true"
+            className="w-3.5 h-3.5"
+            data-slot="icon"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          2 January 2021
+        </span>
+      </div>
+      <h2
+        className="font-display text-xl md:text-2xl font-bold text-stone-900 mb-3 group-hover:text-brand-700 transition-colors"
+      >
+        <a
+          href="/posts/2"
+          onClick={[Function]}
+        >
+          Second Post
+        </a>
+      </h2>
       <p
-        className="text-gray-500 text-sm"
+        className="text-stone-500 leading-relaxed mb-5"
       >
-        2 January 2021 at 12:00
+        This is the second post content
       </p>
-      <a
-        className="text-gray-600 hover:underline"
-        href="/posts/2"
-        onClick={[Function]}
+      <div
+        className="flex items-center justify-between pt-4 border-t border-stone-100"
       >
-        3 Comments
-      </a>
+        <a
+          className="inline-flex items-center gap-1.5 text-sm text-stone-500 hover:text-brand-600 transition-colors"
+          href="/posts/2"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="w-4 h-4"
+            data-slot="icon"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          3 Comments
+        </a>
+        <a
+          className="inline-flex items-center gap-1 text-sm font-semibold text-brand-600 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-2 group-hover:translate-x-0"
+          href="/posts/2"
+          onClick={[Function]}
+        >
+          Read more
+          <svg
+            aria-hidden="true"
+            className="w-4 h-4"
+            data-slot="icon"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
+  </article>
 </div>
 `;
