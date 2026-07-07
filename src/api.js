@@ -3,7 +3,7 @@
 import axios from 'axios';
 axios.defaults.withCredentials = true;
 
-const API_URL = 'https://mi-linux.wlv.ac.uk/~2315822/blog-platform-backend/public/api'; 
+const API_URL = 'http://localhost:8080/api'; 
 
 // Fetch all posts
 export const fetchAllPosts = async () => {
@@ -161,6 +161,46 @@ export const deleteComment = async (commentId, options = {}) => {
     return response.data;
   } catch (error) {
     console.error(`Error deleting comment ${commentId}:`, error);
+    throw error;
+  }
+};
+
+export const fetchUsers = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/users`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching users:', error);
+    throw error;
+  }
+};
+
+export const deleteUser = async (userId) => {
+  try {
+    const response = await axios.delete(`${API_URL}/users/${userId}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error deleting user ${userId}:`, error);
+    throw error;
+  }
+};
+
+export const deletePost = async (postId) => {
+  try {
+    const response = await axios.delete(`${API_URL}/posts/${postId}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error deleting post ${postId}:`, error);
+    throw error;
+  }
+};
+
+export const updatePost = async (postId, postData) => {
+  try {
+    const response = await axios.put(`${API_URL}/posts/${postId}`, postData);
+    return response.data;
+  } catch (error) {
+    console.error(`Error updating post ${postId}:`, error);
     throw error;
   }
 };
